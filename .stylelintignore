@@ -1,0 +1,4 @@
+source/fonts/*.woff
+source/fonts/*.woff-2
+normalize.scss
+source/sass/normalize.scss
