@@ -1,0 +1,83 @@
+.page-header {
+  padding-left: 6.2%;
+  padding-right: 6.2%;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-header__phone-number {
+  color: $color-white;
+  font-family: $font-Bebas;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+
+.page-header__phone-number:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.page-header__phone-number:active {
+  outline: none;
+}
+
+@media (max-width: $desktop-width) {
+  .page-header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .page-header__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-header__logo,
+  .page-header__logo-image {
+    width: 80px;
+    height: 20px;
+  }
+
+  .page-header__phone-number {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .page-header__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-header__logo,
+  .page-header__logo-image {
+    width: 68px;
+    height: 18px;
+  }
+
+  .page-header__phone-number {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+
+}

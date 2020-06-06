@@ -1,0 +1,294 @@
+.gym {
+  padding-left: 6.2%;
+  padding-right: 6.2%;
+  padding-bottom: 120px;
+}
+
+.gym__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gym__description {
+  width: 43%;
+  height: auto;
+  padding-top: 45px;
+  padding-left: 5%;
+  padding-right: 7%;
+}
+
+.gym__description-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  font-family: $font-Bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-transform: uppercase;
+}
+
+.gym__description-lead {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #102654;
+}
+
+.gym__description-text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #102654;
+}
+
+.gym__visual {
+  width: 57%;
+  height: auto;
+}
+
+.gym__image-big {
+  width: 100%;
+  height: auto;
+  background-color: grey;
+}
+
+.gym__image-middle,
+.gym__image-small {
+  display: none;
+}
+
+.gym__visual-video {
+  position: relative;
+  width: 364px;
+  height: 228px;
+  margin-left: -62px;
+  margin-top: -112px;
+  background-image: url("../img/gym_videoplayer-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+
+.gym__videoplayer-layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(20, 54, 122, 0.5);;
+}
+
+.gym__videoplayer-btn {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 64px;
+  left: 132px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/btn_play.svg");
+  cursor: pointer;
+}
+
+.gym__videoplayer-btn:active {
+  outline: none;
+}
+
+@media (max-width: $desktop-width) {
+  .gym {
+    padding-left: 6.1%;
+    padding-right: 6.1%;
+    padding-bottom: 120px;
+  }
+
+  .gym__container {
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+  }
+
+  .gym__description {
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 45px;
+  }
+
+  .gym__description-title {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .gym__description-lead {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-left: 12px;
+    font-family: $font-Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #102654;
+  }
+
+  .gym__description-text {
+    margin-bottom: 10px;
+    padding-left: 47px;
+    padding-right: 33px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #102654;
+  }
+
+  .gym__description-text:last-child {
+    display: none;
+  }
+
+  .gym__visual {
+    width: 100%;
+    height: auto;
+  }
+
+  .gym__visual-picture {
+    width: 100%;
+    height: auto;
+  }
+
+  .gym__image-middle {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .gym__image-big,
+  .gym__image-small {
+    display: none;
+  }
+
+  .gym__visual-video {
+    width: 266px;
+    height: 167px;
+    margin-left: calc(50% - 133px);
+    margin-top: -85px;
+    background-image: url("../img/gym_videoplayer-tablet@1x.jpg");
+  }
+
+  .gym__videoplayer-btn {
+    width: 73px;
+    height: 73px;
+    top: 50px;
+    left: 95px;
+    background-size: 73px 73px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .gym {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    padding-bottom: 120px;
+  }
+
+  .gym__description {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    margin-bottom: 35px;
+  }
+
+  .gym__description-title {
+    text-align: left;
+    margin-bottom: 8px;
+    padding-left: 0;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+  }
+
+  .gym__description-lead {
+    text-align: left;
+    margin-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 18px;
+  }
+
+  .gym__description-text {
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 25px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+  }
+
+  .gym__visual {
+    width: 100%;
+    height: auto;
+  }
+
+  .gym__visual-picture {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .gym__image-small {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: grey;
+  }
+
+  .gym__image-middle,
+  .gym__image-big {
+    display: none;
+  }
+
+  .gym__visual-video {
+    position: relative;;
+    min-width: 320px;
+    min-height: 167px;
+    margin: 0 auto;
+    background-image: url("../img/gym_videoplayer-mobile@1x.jpg");
+    //background-size: 100% auto;
+    //background-position: 0 0;
+  }
+
+  .gym__videoplayer-btn {
+    width: 73px;
+    height: 73px;
+    top: calc(50% - 36px);
+    left: calc(50% - 36px);
+    background-size: 73px 73px;
+    cursor: pointer;
+  }
+
+}

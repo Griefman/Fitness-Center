@@ -17,24 +17,100 @@
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("../fonts/bebasneue-regular-webfont.woff2") format("woff2"),
-    url("../fonts/robotocondensed-bold-webfont.woff") format("woff");
+  src: url("../fonts/bebasneue_regular-webfont.woff2") format("woff2"),
+    url("../fonts/bebasneue_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebasneue_bold-webfont.woff2") format("woff2"),
+  url("../fonts/bebasneue_bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+$tablet-width: 767px;
+$desktop-width: 1199px;
+$color-white: #ffffff;
+$font-Bebas: "Bebas Neue", "Arial", cursive;
+$font-Roboto: "Roboto Condensed", "Arial", sans-serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-family: $font-Roboto;
   font-size: 16px;
   font-weight: normal;
+  color: $color-white;
+  background-color: $color-white;
+  background-image: url("../img/main-block_bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100% 658px;
+  background-position: 0 0;
 }
 
-h1 {
-  color: red;
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }
 
-p {
-  font-family: "Bebas Neue", "Arial", sans-serif;
-  font-size: 24px;
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+@media (max-width: $desktop-width) {
+  body {
+    background-image: url("../img/main-block_bg-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 554px;
+    background-position: 0 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  body {
+    background-image: url("../img/main-block_bg-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 491px;
+    background-position: 0 0;
+  }
 }
