@@ -23,7 +23,7 @@
   display: inline-block;
   vertical-align: top;
   margin-bottom: 10px;
-  font-family:  "Bebas Neue", cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -53,10 +53,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
-}
-
-.main-block__content-buy {
-
 }
 
 .main-block__content-btn {
@@ -170,13 +166,8 @@
     left: 0;
   }
 
-  .main-block__content-buy {
-
-  }
-
   .main-block__content-btn {
     width: 185px;
-
   }
 
   .main-block__image {
@@ -197,7 +188,7 @@
   }
 
   .main-block__social {
-display: none;
+    display: none;
   }
 }
 
