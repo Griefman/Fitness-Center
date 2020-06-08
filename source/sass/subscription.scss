@@ -1,0 +1,376 @@
+.subscription {
+  position: relative;
+  margin-bottom: 99px;
+  padding-left: 6.2%;
+  padding-right: 6.2%;
+  padding-top: 115px;
+  padding-bottom: 120px;
+  background-color: lightgreen;
+}
+
+
+.subscription::before {
+  position: absolute;
+  content: " ";
+  bottom: -230px;
+  right: 0;
+  width: 287px;
+  height: 494px;
+  background-image: url("../img/bg_chips-desktop@1x.png");
+  background-size: 287px 494px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 0;
+}
+
+
+.subscription__container {
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.subscription__title {
+  margin: 0;
+  margin-bottom: 38px;
+  text-align: center;
+  font-family: $font-Bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $color-text-black;
+}
+
+.subscription__time {
+  width: 335px;
+  height: auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+ }
+
+.subscription__time-item {
+  margin: 0;
+  padding: 0;
+}
+
+.subscription__time-link {
+  display: inline-block;
+  vertical-align: bottom;
+  padding-bottom: 9px;
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  color: $color-text-black;
+}
+
+.subscription__time-item--active {
+  box-shadow: 0 2px 0 0 #D10A42;
+}
+
+.subscription__wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.subscription__tariff {
+  width: 31%;
+  min-height: 448px;
+  padding-top: 60px;
+  background-color: $color-white;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.subscription__tariff:hover {
+  padding-top: 56px;
+  border: 4px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(135deg, #D10A42, #00359F);
+}
+
+.subscription__tariff:hover .subscription__tariff-btn {
+  background: linear-gradient(to right, #D10A42, #00359F);
+  color: $color-white;
+}
+
+.subscription__tariff--bg1700 {
+  background-image: url("../img/subscription_bg-1700-desktop.png");
+  background-size: 203px 69px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.subscription__tariff--bg2700 {
+  background-image: url("../img/subscription_bg-2700-desktop.png");
+  background-size: 203px 69px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.subscription__tariff--bg5000 {
+  background-image: url("../img/subscription_bg-5000-desktop.png");
+  background-size: 203px 69px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.subscription__tariff:nth-child(3n),
+.subscription__tariff:last-child {
+  margin-right: 0;
+}
+
+.subscription__tariff-name {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  color: $color-text-black;
+}
+
+.subscription__tariff-routine {
+  display: block;
+  margin-bottom: 67px;
+  text-align: center;
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #495a7d;
+}
+
+.subscription__tariff-price {
+  display: block;
+  margin-bottom: 37px;
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 150%;
+  color: #103AAE;
+}
+
+.subscription__tariff-ruble {
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 150%;
+  color: $color-text-black;
+}
+
+.subscription__tariff-order {
+  margin: 0 auto;
+  width: 205px;
+  height: 64px;
+}
+
+.subscription__tariff-btn {
+  display: inline-block;
+  vertical-align: center;
+  width: 208px;
+  height: 64px;
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-text-black;
+  border: 2px solid $color-text-black;
+  background-color: transparent;
+}
+
+.subscription__tariff-btn:active {
+  outline: none;
+}
+
+
+@media (max-width: $tablet-width) {
+  .subscription {
+    padding-left: 21.2%;
+    padding-right: 21.2%;
+    padding-top: 98px;
+    padding-bottom: 60px;
+    background-color: lightgreen;
+  }
+
+  .subscription::before {
+    position: absolute;
+    content: " ";
+    bottom: -230px;
+    right: 0;
+    width: 347px;
+    height: 544px;
+    background-image: url("../img/bg_chips-tablet@1x.png");
+    background-size: 347px 444px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 0;
+  }
+
+  .subscription__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .subscription__title {
+    margin: 0;
+    margin-bottom: 33px;
+    text-align: center;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  }
+
+  .subscription__time {
+    width: 335px;
+    margin-bottom: 45px;
+    border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  }
+
+  .subscription__time-link {
+    padding-bottom: 9px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .subscription__tariff {
+    width: 100%;
+    min-height: 448px;
+    padding-top: 65px;
+    background-color: $color-white;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  .subscription__tariff-price {
+    margin-bottom: 33px;
+  }
+
+  .subscription__tariff--bg1700,
+  .subscription__tariff--bg2700,
+  .subscription__tariff--bg5000 {
+    background-position: 50% calc(50% - 10px);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .subscription {
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+    padding-top: 68px;
+    padding-bottom: 35px;
+    margin-bottom: 70px;
+  }
+
+  .subscription::before {
+    display: none;
+  }
+
+  .subscription__title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.03em;;
+  }
+
+  .subscription__time {
+    width: 100%;
+    margin-bottom: 35px;
+    border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  }
+
+  .subscription__time-link {
+    padding-bottom: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(16, 38, 84, 0.5)
+  }
+
+  .subscription__tariff {
+    width: 100%;
+    min-height: 248px;
+    padding-top: 49px;
+    padding-bottom: 50px;
+    background-color: $color-white;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+
+  .subscription__tariff-name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+
+  .subscription__tariff-routine {
+    margin-bottom: 53px;
+  }
+
+  .subscription__tariff-price {
+    margin-bottom: 33px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 150%;
+  }
+
+  .subscription__tariff-ruble {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 150%;
+  }
+
+  .subscription__tariff--bg1700 {
+    background-image: url("../img/subscription_bg-1700-mobile.png");
+  }
+
+  .subscription__tariff--bg2700 {
+    background-image: url("../img/subscription_bg-2700-mobile.png");
+  }
+
+  .subscription__tariff--bg5000 {
+    background-image: url("../img/subscription_bg-5000-mobile.png");
+  }
+
+  .subscription__tariff--bg1700,
+  .subscription__tariff--bg2700,
+  .subscription__tariff--bg5000 {
+    background-size: 162px 55px;
+    background-position: 50% calc(50% - 10px);
+  }
+}

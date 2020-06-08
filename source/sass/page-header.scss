@@ -27,7 +27,7 @@
   outline: none;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .page-header {
     padding-left: 15px;
     padding-right: 15px;
@@ -54,7 +54,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .page-header {
     padding-left: 5%;
     padding-right: 5%;

@@ -31,11 +31,12 @@
   font-style: normal;
 }
 
-$tablet-width: 767px;
-$desktop-width: 1199px;
+$mobile-width: 767px;
+$tablet-width: 1199px;
 $color-white: #ffffff;
 $font-Bebas: "Bebas Neue", "Arial", cursive;
 $font-Roboto: "Roboto Condensed", "Arial", sans-serif;
+$color-text-black: #102654;
 
 *,
 *::before,
@@ -60,10 +61,11 @@ body {
   font-weight: normal;
   color: $color-white;
   background-color: $color-white;
-  background-image: url("../img/main-block_bg-desktop@1x.png");
+  background-image: url("../img/main-block_bg-desktop@1x.png"),
+  url("../img/bg_chips-tablet@1x.png");
   background-repeat: no-repeat;
-  background-size: 100% 658px;
-  background-position: 0 0;
+  background-size: 100% 658px, 347px 444px;
+  background-position: 0 0, right 0 top 800px;
 }
 
 img {
@@ -97,7 +99,7 @@ a {
 }
 
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   body {
     background-image: url("../img/main-block_bg-tablet@1x.png");
     background-repeat: no-repeat;
@@ -106,7 +108,7 @@ a {
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   body {
     background-image: url("../img/main-block_bg-mobile@1x.png");
     background-repeat: no-repeat;

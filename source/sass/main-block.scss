@@ -125,7 +125,7 @@
   display: none;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .main-block {
     padding-left: 6.1%;
     padding-right: 6.1%;
@@ -192,7 +192,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .main-block {
     padding-left: 15px;
     padding-right: 15px;

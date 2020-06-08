@@ -27,7 +27,7 @@
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
-  color: #102654;
+  color: $color-text-black;
   text-transform: uppercase;
 }
 
@@ -40,7 +40,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
-  color: #102654;
+  color: $color-text-black;
 }
 
 .gym__description-text {
@@ -51,7 +51,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  color: #102654;
+  color: $color-text-black;
 }
 
 .gym__visual {
@@ -107,11 +107,11 @@
   outline: none;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .gym {
     padding-left: 6.1%;
     padding-right: 6.1%;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
   }
 
   .gym__container {
@@ -205,12 +205,12 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .gym {
     padding-left: 0;
     padding-right: 0;
     width: 100%;
-    padding-bottom: 120px;
+    padding-bottom: 67px;
   }
 
   .gym__description {
