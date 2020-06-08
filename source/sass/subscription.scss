@@ -52,7 +52,7 @@
   margin: 0 auto;
   margin-bottom: 40px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
- }
+}
 
 .subscription__time-item {
   margin: 0;
@@ -72,7 +72,7 @@
 }
 
 .subscription__time-item--active {
-  box-shadow: 0 2px 0 0 #D10A42;
+  box-shadow: 0 2px 0 0 #d10a42;
 }
 
 .subscription__wrapper {
@@ -99,11 +99,11 @@
   padding-top: 56px;
   border: 4px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(135deg, #D10A42, #00359F);
+  border-image-source: linear-gradient(135deg, #d10a42, #00359f);
 }
 
 .subscription__tariff:hover .subscription__tariff-btn {
-  background: linear-gradient(to right, #D10A42, #00359F);
+  background: linear-gradient(to right, #d10a42, #00359f);
   color: $color-white;
 }
 
@@ -165,7 +165,7 @@
   font-weight: bold;
   font-size: 60px;
   line-height: 150%;
-  color: #103AAE;
+  color: #103aae;
 }
 
 .subscription__tariff-ruble {
@@ -296,7 +296,7 @@
     margin-bottom: 25px;
     font-size: 32px;
     line-height: 32px;
-    letter-spacing: 0.03em;;
+    letter-spacing: 0.03em;
   }
 
   .subscription__time {
@@ -311,7 +311,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
-    color: rgba(16, 38, 84, 0.5)
+    color: rgba(16, 38, 84, 0.5);
   }
 
   .subscription__tariff {

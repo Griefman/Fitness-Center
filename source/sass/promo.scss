@@ -44,7 +44,7 @@
   font-size: 90px;
   line-height: 90px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: $color-white;
 }
 
 .promo__date {
@@ -168,7 +168,7 @@
 }
 
 .promo__btn-link:active {
-outline: none;
+  outline: none;
 }
 
 .promo__image {
@@ -186,7 +186,7 @@ outline: none;
 
 .promo__picture-middle,
 .promo__picture-small {
-display: none;
+  display: none;
 }
 
 @media (max-width: $tablet-width) {
@@ -240,11 +240,6 @@ display: none;
 
   .promo__day-name span {
     font-size: 12px;
-    line-height: 100%;
-  }
-
-  .promo__day-name span {
-    font-size: 12px;
     line-height: 150%;
   }
 
@@ -272,7 +267,7 @@ display: none;
 
   .promo__time-clock span {
     font-size: 24px;
-    line-height: 100%
+    line-height: 100%;
   }
 
   .promo__text {
@@ -358,7 +353,7 @@ display: none;
     line-height: 125%;
   }
 
-  .promo__time-name span{
+  .promo__time-name span {
     font-size: 12px;
     line-height: 100%;
   }

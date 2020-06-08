@@ -22,7 +22,7 @@
 
 .trainers__arrow-left:active,
 .trainers__arrow-right:active {
-outline: none;
+  outline: none;
 }
 
 .trainers__arrow-left {
@@ -64,7 +64,7 @@ outline: none;
 
 .trainers__item:hover .trainers__item-layout,
 .trainers__item:hover .trainers__description-wrapper {
-display: block;
+  display: block;
 }
 
 .trainers__item:hover .trainers__description-name {
@@ -87,26 +87,22 @@ display: block;
   background: rgba(16, 38, 84, 0.89);
 }
 
-.trainers__description {
-  position: absolute;
-  flex-direction: column;
-  padding-top: 50px;
-  top: 0;
-  left: 0;
-  text-align: center;
-}
-
 .trainers__description-wrapper {
   display: none;
 }
 
 .trainers__description {
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
   padding-left: 12%;
   padding-right: 12%;
+  padding-top: 50px;
+  top: 0;
+  left: 0;
+  text-align: center;
 }
 
 .trainers__description b {
@@ -148,7 +144,7 @@ display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
-  color: #FFFFFF;
+  color: $color-white;
 }
 
 .trainers__description-item:last-child {
