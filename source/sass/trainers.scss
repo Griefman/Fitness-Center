@@ -76,8 +76,6 @@
   height: auto;
 }
 
-
-
 .trainers__item-layout {
   display: none;
   position: absolute;
@@ -185,7 +183,7 @@
     display: block;
   }
 
-    .trainers {
+  .trainers {
     position: relative;
     padding-left: 13.2%;
     padding-right: 13.2%;
@@ -219,7 +217,6 @@
   .trainers__item {
     width: 47.5%;
   }
-
 }
 
 @media (max-width: $mobile-width) {

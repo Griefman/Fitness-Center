@@ -182,7 +182,7 @@
 }
 
 .action__item-link:active {
-outline: none;
+  outline: none;
 }
 
 @media (max-width: $tablet-width) {
@@ -206,11 +206,11 @@ outline: none;
     display: block;
   }
 
-
   .actions__list {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 
   .actions__promo-wrapper {
@@ -249,11 +249,6 @@ outline: none;
     display: block;
   }
 
-  .actions__list {
-    width: 100%;
-    flex-direction: row;
-  }
-
   .action__item {
     width: 47.9%;
     min-height: 210px;
@@ -269,9 +264,8 @@ outline: none;
   .action__item-name {
     margin-bottom: 3%;
   }
-
 }
 
-@media (max-width: $mobile-width) {
-
-}
+//@media (max-width: $mobile-width) {
+//
+//}

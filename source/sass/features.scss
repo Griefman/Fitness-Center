@@ -26,7 +26,7 @@
 }
 
 .feature-item {
-  color: #fff;
+  color: $color-white;
   box-sizing: border-box;
 }
 
@@ -67,6 +67,7 @@
   line-height: 140%;
   color: $color-text-black;
 }
+
 .area,
 .experience,
 .parking,
@@ -199,15 +200,17 @@
 
 .feature-item:nth-of-type(4n+1) {
   order: 1;
-
 }
+
 .feature-item:nth-of-type(4n+2) {
   order: 2;
 }
+
 .feature-item:nth-of-type(4n+3) {
   order: 4;
 }
-.feature-item:nth-of-type(4n)   {
+
+.feature-item:nth-of-type(4n) {
   order: 3;
 }
 
@@ -389,9 +392,17 @@
     display: none;
   }
 
-  .feature-item:nth-of-type(3n+1) { order: 1; }
-  .feature-item:nth-of-type(3n+2) { order: 2; }
-  .feature-item:nth-of-type(3n) { order: 3; }
+  .feature-item:nth-of-type(3n+1) {
+    order: 1;
+  }
+
+  .feature-item:nth-of-type(3n+2) {
+    order: 2;
+  }
+
+  .feature-item:nth-of-type(3n) {
+    order: 3;
+  }
 }
 
 @media (max-width: $mobile-width) {
