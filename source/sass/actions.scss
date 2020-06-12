@@ -43,11 +43,14 @@
 }
 
 .actions__promo-wrapper {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   height: auto;
   padding-left: 7.9%;
   padding-right: 7.9%;
   padding-top: 7.3%;
+  padding-bottom: 5%;
   background-color: #ed0233;
 }
 
@@ -65,7 +68,6 @@
 .actions__promo-description {
   display: block;
   margin: 0;
-  margin-bottom: 190px;
   font-family: $font-Roboto;
   font-style: normal;
   font-weight: normal;

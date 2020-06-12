@@ -1,0 +1,152 @@
+.reviews {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 55px;
+  padding-bottom: 120px;
+}
+
+.reviews__arrow-left,
+.reviews__arrow-right {
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.reviews__arrow-left:hover,
+.reviews__arrow-right:hover {
+  opacity: 0.3;
+}
+
+.reviews__arrow-left:active,
+.reviews__arrow-right:active {
+  outline: none;
+}
+
+.reviews__arrow-left {
+  top: 260px;
+  left: 25%;
+}
+
+.reviews__arrow-right {
+  top: 260px;
+  right: 25%;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 55px;
+  text-align: center;
+  font-family: $font-Bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $color-text-black;
+}
+
+.reviews__slide {
+  display: flex;
+  width: 41%;
+  min-height: 232px;
+  margin: 0 auto;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+  padding-top: 4.5%;
+  padding-bottom: 3%;
+  background: #1c3374;
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+}
+
+.reviews__avatar {
+  width: 25%;
+  height: 80px;
+  display: flex;
+}
+
+.reviews__avatar-picture {
+  width: 80px;
+  height: 80px;
+  vertical-align: bottom;
+  border: 2px solid #1c3374;
+  border-radius: 50%;
+}
+
+.reviews__content {
+  width: 75%;
+  height: auto;
+  margin-left: auto;
+  padding-top: 0;
+}
+
+.reviews__content-name {
+  margin: 0;
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  color: $color-white;
+}
+
+.reviews__content-text {
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: $color-white;
+}
+
+.slide__02 {
+  display: none;
+}
+
+
+@media (max-width: $tablet-width) {
+  .reviews {
+    padding-top: 35px;
+    padding-bottom: 100px;
+  }
+
+  .reviews__arrow-left {
+    top: 223px;
+    left: 6%;
+  }
+
+  .reviews__arrow-right {
+    top: 223px;
+    right: 6%;
+  }
+
+  .reviews__title {
+    margin: 0;
+    margin-bottom: 45px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .reviews__slide {
+    display: flex;
+    width: 74%;
+    min-height: 240px;
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+    padding-top: 7.5%;
+    padding-bottom: 3%;
+  }
+
+  .reviews__avatar-picture {
+    width: 85px;
+    height: 85px;
+  }
+
+  .slide__02 {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+}
