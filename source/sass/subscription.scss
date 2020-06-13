@@ -207,11 +207,11 @@
 
 @media (max-width: $tablet-width) {
   .subscription {
+    margin-bottom: 100px;
     padding-left: 21.2%;
     padding-right: 21.2%;
     padding-top: 98px;
     padding-bottom: 60px;
-    background-color: lightgreen;
   }
 
   .subscription::before {

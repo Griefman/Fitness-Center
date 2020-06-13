@@ -106,3 +106,47 @@
 .page-form__form-button:active {
   outline: none;
 }
+
+@media (max-width: $tablet-width) {
+  .feedback-wrapper {
+    flex-direction: column;
+  }
+
+  .page-form {
+    width: 100%;
+    padding-left: 17.3%;
+    padding-top: 68px;
+    padding-bottom: 66px;
+    padding-right: 21.2%;
+  }
+
+  .page-form__title {
+    margin-bottom: 38px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .page-form__form-field {
+    width: 44%;
+    height: auto;
+  }
+
+
+  .page-form__input {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .page-form__form-button {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+//@media (max-width: $mobile-width) {
+//
+//}
