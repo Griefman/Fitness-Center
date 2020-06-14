@@ -15,15 +15,18 @@
   height: auto;
 }
 
-.footer-navigation {
-  width: 61%;
+.footer__logo {
+  margin-right: 238px;
 }
 
 .navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 68.5%;
   display: flex;
   justify-content: space-between;
   height: auto;
-  margin-left: 34%;
+  margin-left: 0;
   list-style: none;
 }
 
@@ -48,8 +51,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 13%;
+  width: 110px;
   margin-left: auto;
+  padding: 0;
   list-style: none;
 }
 
@@ -63,52 +67,92 @@
 
 @media (max-width: $tablet-width) {
   .footer {
-    width: 100%;
-    height: auto;
-    padding-top: 28px;
+    padding-top: 25px;
     padding-bottom: 30px;
-    padding-left: 5.9%;
+    padding-left: 5.5%;
     padding-right: 5.5%;
     background-color: #030a1a;
   }
 
-  .footer-wrapper {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
-  }
-
   .footer__logo {
-    width: 115px;
-    height: auto;
-  }
-
-  .footer__logo-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .footer-navigation {
-    width: 60%;
+    width: 82px;
+    height: 18px;
+    margin-right: 45px;
   }
 
   .navigation-list {
-    width: 390px;
-    margin-left: 16%;
-    padding-left: 0;
+    width: 75%;
   }
 
   .footer-social {
+    width: 100px;
     justify-content: space-between;
-    align-items: center;
-    width: 150px;
-    margin-left: 0;
-    padding: 0;
+    margin-left: auto;
   }
 }
 
 
-//@media (max-width: $mobile-width) {
-//
-//}
+@media (max-width: $mobile-width) {
+  .footer-wrapper {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navigation-list {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .navigation-list__item {
+    width: 45%;
+    margin-bottom: 23px;
+  }
+
+  .navigation-list__item:nth-child(1) {
+    order: 1;
+  }
+
+  .navigation-list__item:nth-child(2) {
+    order: 3;
+  }
+
+  .navigation-list__item:nth-child(3) {
+    order: 5;
+  }
+
+  .navigation-list__item:nth-child(4) {
+    order: 2;
+  }
+
+  .navigation-list__item:nth-child(5) {
+    order: 4;
+  }
+
+  .navigation-list__item:nth-child(6) {
+    order: 6;
+  }
+
+
+  .navigation-list__link {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .footer__logo {
+    width: 68px;
+    height: 15px;
+    margin-right: 0;
+  }
+
+  .footer-social {
+    width: 140px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}

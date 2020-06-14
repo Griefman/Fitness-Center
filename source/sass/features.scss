@@ -223,6 +223,10 @@
   padding: 0;
 }
 
+.feature-item__date-image:nth-child(2) {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
   .features {
     padding-left: 6%;
@@ -409,8 +413,14 @@
   .features {
     padding-left: 0%;
     padding-right: 0%;
-    padding-top: 93px;
-    padding-bottom: 100px;
+    padding-top: 68px;
+    padding-bottom: 27px;
+  }
+
+  .features__title {
+    margin-bottom: 50px;
+    font-size: 32px;
+    line-height: 32px;
   }
 
   .features-list {
@@ -424,8 +434,134 @@
     margin: 40px auto;
   }
 
+  .feature-item__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .feature-item {
     width: 100%;
+    height: auto;
+    margin-bottom: 42px;
+  }
+
+  .feature-item__content-title,
+  .feature-item__content-text {
+    text-align: center;
+  }
+
+  .feature-item__content-text {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .area__date-number,
+  .comfort__date-number {
+    width: 89px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  .feature-item__date-number {
+    margin-bottom: 17px;
+  }
+
+  .area__content {
+    width: 100%;
+    height: auto;
+    padding-left: 21%;
+    padding-right: 21%;
+  }
+
+  .parking__content {
+    width: 100%;
+    height: auto;
+    padding-left: 13%;
+    padding-right: 13%;
+  }
+
+  .parking__date {
+    width: 63px;
+    height: 70px;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .parking__date-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .equipment {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 21%;
+    padding-right: 21%;
+    padding-top: 33px;
+    padding-bottom: 25px;
+    background-color: #1c3374;
+    margin-bottom: 5px;
+  }
+
+  .equipment__number {
+    margin-bottom: 5px;
+  }
+
+  .equipment__title {
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 100%;
+    color: $color-white;
+  }
+
+
+  .comfort__content {
+    width: 100%;
+    height: auto;
+    padding-left: 17%;
+    padding-right: 17%;
+  }
+
+  .experience {
     margin-bottom: 0;
+  }
+
+  .experience__wrapper {
+    padding-top: 0;
+  }
+
+  .experience__content {
+    width: 100%;
+    height: auto;
+    padding-left: 13%;
+    padding-right: 13%;
+  }
+
+  .experience__date {
+    width: 59px;
+    height: 60px;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .experience__date-image {
+    margin: 0 auto;
+  }
+
+  .feature-item__date-image:nth-child(1) {
+    display: none;
+  }
+
+  .feature-item__date-image:nth-child(2) {
+    display: block;
   }
 }

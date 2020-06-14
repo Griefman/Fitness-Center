@@ -147,6 +147,42 @@
 }
 
 
-//@media (max-width: $mobile-width) {
-//
-//}
+@media (max-width: $mobile-width) {
+  .page-form {
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 68px;
+    padding-bottom: 69px;
+    padding-right: 5%;
+  }
+
+  .page-form__title {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .page-form__form-container {
+    flex-direction: column;
+  }
+
+  .page-form__form-field {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .page-form__form-field:last-child {
+    margin-bottom: 10px;
+  }
+
+  .page-form__form-button {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}

@@ -112,9 +112,6 @@
   vertical-align: bottom;
 }
 
-.picture__middle {
-  display: none;
-}
 
 .actions__list {
   width: 48.2%;
@@ -185,19 +182,25 @@
   outline: none;
 }
 
+//---------- switching --------
+.picture__middle,
+.picture__small {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
   .actions {
     width: 100%;
     height: auto;
-    padding-top: 120px;
+    padding-top: 128px;
     padding-left: 5.7%;
     padding-right: 5.7%;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
 
   .actions__title {
     margin: 0;
-    margin-bottom: 47px;
+    margin-bottom: 42px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -242,14 +245,6 @@
     height: auto;
   }
 
-  .picture__big {
-    display: none;
-  }
-
-  .picture__middle {
-    display: block;
-  }
-
   .action__item {
     width: 47.9%;
     min-height: 210px;
@@ -265,8 +260,111 @@
   .action__item-name {
     margin-bottom: 3%;
   }
+
+  .picture__big {
+    display: none;
+  }
+
+  .picture__middle {
+    display: block;
+  }
 }
 
-//@media (max-width: $mobile-width) {
-//
-//}
+@media (max-width: $mobile-width) {
+  .actions {
+    padding-top: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 43px;
+  }
+
+  .actions__title {
+    margin: 0;
+    margin-bottom: 46px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .actions__promo {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .actions__promo-wrapper {
+    width: 100%;
+    height: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 40px;
+    padding-bottom: 46px;
+  }
+
+  .actions__promo-year {
+    text-align: center;
+  }
+
+  .actions__promo-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .actions__promo-name {
+    text-align: center;
+    margin-bottom: 17px;
+  }
+
+  .actions__promo-description {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .actions__promo-link {
+
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .actions__list {
+    flex-direction: column;
+  }
+
+  .action__item {
+    width: 100%;
+    min-height: 210px;
+    padding-top: 35px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .action__item:nth-child(1) {
+    padding-right: 0;
+    margin-bottom: 33px;
+  }
+
+  .action__item-name {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .action__item-description {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 26px;
+  }
+
+  .action__item-link {
+    margin: 0 auto;
+  }
+  //---------- switching ---------
+  .picture__middle {
+    display: none;
+  }
+
+  .picture__small {
+    display: block;
+  }
+}
