@@ -6,35 +6,6 @@
   padding-bottom: 120px;
 }
 
-.reviews__arrow-left,
-.reviews__arrow-right {
-  position: absolute;
-  display: block;
-  width: 18px;
-  height: 34px;
-  cursor: pointer;
-}
-
-.reviews__arrow-left:hover,
-.reviews__arrow-right:hover {
-  opacity: 0.3;
-}
-
-.reviews__arrow-left:active,
-.reviews__arrow-right:active {
-  outline: none;
-}
-
-.reviews__arrow-left {
-  top: 260px;
-  left: 25%;
-}
-
-.reviews__arrow-right {
-  top: 260px;
-  right: 25%;
-}
-
 .reviews__title {
   margin: 0;
   margin-bottom: 55px;
@@ -47,14 +18,17 @@
 }
 
 .reviews__slide {
+  position: relative;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 41%;
-  min-height: 232px;
+  min-height: 242px;
   margin: 0 auto;
   padding-left: 4.5%;
   padding-right: 4.5%;
   padding-top: 4.5%;
-  padding-bottom: 3%;
+  padding-bottom: 0%;
   background: #1c3374;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 }
@@ -62,7 +36,6 @@
 .reviews__avatar {
   width: 25%;
   height: 80px;
-  display: flex;
 }
 
 .reviews__avatar-picture {
@@ -76,12 +49,15 @@
 .reviews__content {
   width: 75%;
   height: auto;
-  margin-left: auto;
+  margin-left: 0;
   padding-top: 0;
 }
 
 .reviews__content-name {
   margin: 0;
+  padding: 0;
+  display: block;
+  margin-bottom: 17px;
   font-family: $font-Roboto;
   font-style: normal;
   font-weight: bold;
@@ -91,6 +67,8 @@
 }
 
 .reviews__content-text {
+  margin: 0;
+  padding: 0;
   font-family: $font-Roboto;
   font-style: normal;
   font-weight: normal;
@@ -101,23 +79,44 @@
 
 .slide__02 {
   display: none;
+  //z-index: -10;
 }
 
+//---------- Slider ---------
+.prev,
+.next {
+  position: absolute;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 18px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.prev {
+  top: 50.3%;
+  left: 25.3%;
+  background-image: url("../img/icon_arrow-left_desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+
+.next {
+  top: 50.3%;
+  right: 25.3%;
+  background-image: url("../img/icon_arrow-right_desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
 
 @media (max-width: $tablet-width) {
   .reviews {
     padding-top: 55px;
     padding-bottom: 100px;
-  }
-
-  .reviews__arrow-left {
-    top: 240px;
-    left: 6%;
-  }
-
-  .reviews__arrow-right {
-    top: 240px;
-    right: 6%;
   }
 
   .reviews__title {
@@ -140,10 +139,6 @@
   .reviews__avatar-picture {
     width: 85px;
     height: 85px;
-  }
-
-  .slide__02 {
-    display: none;
   }
 }
 
