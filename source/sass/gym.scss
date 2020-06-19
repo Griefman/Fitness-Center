@@ -103,6 +103,10 @@
   cursor: pointer;
 }
 
+.gym__videoplayer-btn:hover {
+  opacity: 0.7;
+}
+
 .gym__videoplayer-btn:active {
   outline: none;
 }

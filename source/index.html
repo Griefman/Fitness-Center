@@ -60,6 +60,9 @@
 
 
         </a></li>
+
+
+
       </ul>
 
     </div>
@@ -109,7 +112,7 @@
     <div class="subscription__container">
       <h2 class="subscription__title">Абонементы</h2>
       <ul class="subscription__time">
-        <li class="subscription__time-item subscription__time-item--active">
+        <li class="subscription__time-item">
           <a href="#" class="subscription__time-link">1 месяц</a>
         </li>
         <li class="subscription__time-item">
@@ -533,7 +536,9 @@
       <div class="actions__list action">
         <div class="action__item">
           <h3 class="action__item-name">Месяц бесплатно</h3>
-          <p class="action__item-description">Приведи друга, получи абонемент в подарок </p>
+          <p class="action__item-description">
+            Приведи друга, получи абонемент в подарок
+          </p>
           <a href="#" class="action__item-link">Подробнее</a>
         </div>
         <div class="action__item">
@@ -583,12 +588,12 @@
         <div class="page-form__form-container">
           <div class="page-form__form-field">
             <label for="page-name" class="visually-hidden"></label>
-            <input class="page-form__input" id="page-name" type="text" name="name" placeholder="Имя">
+            <input class="page-form__input" id="page-name" type="text" name="name" placeholder="Имя" required>
           </div>
 
           <div class="page-form__form-field">
             <label for="page-phone" class="visually-hidden"></label>
-            <input class="page-form__input" type="tel" id="page-phone" name="phone-number" placeholder="Телефон" aria-label="Телефон">
+            <input class="page-form__input" type="number" id="page-phone" name="phone-number" placeholder="Телефон" aria-label="Телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
           </div>
         </div>
         <div class="page-form__btn-wrapper">
@@ -620,7 +625,7 @@
 
         <li class="contacts-list__item">
           <span class="contacts-list__item-name">Email:</span>
-          <p class="contacts-list__item-text">omsk@supergym.ru</p>
+          <a href="mailto:ask@htmlbook.ru" class="contacts-list__item-text">omsk@supergym.ru</a>
         </li>
       </ul>
     </section>
@@ -678,6 +683,11 @@
         </a>
 
       </li>
+
+
+
+
+
     </ul>
 
   </div>

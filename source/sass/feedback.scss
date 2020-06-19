@@ -56,6 +56,8 @@
   color: $color-white;
   background-color: transparent;
   border-bottom: 1px solid #74819c;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 ::-webkit-input-placeholder {/*WebKitbrowsers*/

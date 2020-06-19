@@ -82,6 +82,11 @@
   color: $color-text-black;
 }
 
+.contacts__item-link:hover,
+.contacts-list__item-text:hover {
+  color: rgba(16, 38, 84, 0.5);
+}
+
 @media (max-width: $tablet-width) {
   .contacts {
     width: 100%;

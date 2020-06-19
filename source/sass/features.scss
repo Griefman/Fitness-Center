@@ -26,24 +26,25 @@
 }
 
 .feature-item {
+  position: relative;
   color: $color-white;
   box-sizing: border-box;
+}
+
+.area::before,
+.parking::before {
+  position: absolute;
+  content: "";
+  width: 85%;
+  height: 2px;
+  bottom: 0;
+  left: 10%;
+  background-color: rgba(209, 10, 66, 0.2);
 }
 
 .feature-item__wrapper {
   display: flex;
 }
-
-
-//.feature-item__date-unit {
-//  display: block;
-//  font-family: $font-Roboto;
-//  font-style: normal;
-//  font-weight: normal;
-//  font-size: 14px;
-//  line-height: 100%;
-//  color: #2e35ac;
-//}
 
 .feature-item__content-title {
   text-align: left;
@@ -81,11 +82,6 @@
   height: auto;
   padding-left: 13%;
 }
-
-//.area__date-image {
-//  width: 100%;
-//  height: auto;
-//}
 
 .area__content {
   width: 60%;
@@ -142,11 +138,6 @@
   padding-left: 9%;
 }
 
-//.parking__date-image {
-//  width: 100%;
-//  height: auto;
-//}
-
 .parking__content {
   width: 70%;
   height: auto;
@@ -164,11 +155,6 @@
   padding-left: 11%;
 }
 
-//.comfort__date-image {
-//  width: 100%;
-//  height: auto;
-//}
-
 .comfort__content {
   width: 60%;
   height: auto;
@@ -185,11 +171,6 @@
   height: auto;
   padding-left: 9%;
 }
-
-//.experience__date-image {
-//  width: 100%;
-//  height: auto;
-//}
 
 .experience__content {
   width: 72.6%;
@@ -228,6 +209,11 @@
 }
 
 @media (max-width: $tablet-width) {
+  .area::before,
+  .parking::before {
+    display: none;
+  }
+
   .features {
     padding-left: 6%;
     padding-right: 6%;
