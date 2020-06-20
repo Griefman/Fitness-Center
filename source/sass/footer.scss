@@ -16,18 +16,32 @@
 }
 
 .footer__logo {
-  margin-right: 238px;
+  display: flex;
+  margin-right: auto;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
   width: 68.5%;
+  height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+
+  flex-wrap: wrap;
   height: auto;
   margin-left: 0;
   list-style: none;
+}
+
+.navigation-list__item {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.navigation-list__item:first-child {
+  margin-right: auto;
+  margin-left: 0;
 }
 
 .navigation-list__link {
