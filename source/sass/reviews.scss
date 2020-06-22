@@ -27,20 +27,19 @@
   margin: 0 auto;
   padding-left: 4.5%;
   padding-right: 4.5%;
-  padding-top: 4.5%;
-  padding-bottom: 0%;
+  padding-top: 60px;
   background: #1c3374;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 }
 
 .reviews__avatar {
   width: 25%;
-  height: 80px;
+  height: 85px;
 }
 
 .reviews__avatar-picture {
-  width: 80px;
-  height: 80px;
+  width: 85px;
+  height: 85px;
   vertical-align: bottom;
   border: 2px solid #1c3374;
   border-radius: 50%;
@@ -51,6 +50,7 @@
   height: auto;
   margin-left: 0;
   padding-top: 0;
+  padding-bottom: 10px;
 }
 
 .reviews__content-name {
@@ -67,6 +67,8 @@
 }
 
 .reviews__content-text {
+  width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   font-family: $font-Roboto;
@@ -75,12 +77,10 @@
   font-size: 16px;
   line-height: 140%;
   color: $color-white;
-  padding-bottom: 20px;
 }
 
 .slide__02 {
   display: none;
-  //z-index: -10;
 }
 
 //---------- Slider ---------
@@ -143,7 +143,7 @@
     min-height: 240px;
     padding-left: 8.5%;
     padding-right: 8.5%;
-    padding-top: 7.5%;
+    padding-top: 55px;
     padding-bottom: 3%;
   }
 
@@ -176,19 +176,27 @@
     width: 70%;
     min-height: 335px;
     margin: 0 auto;
+    padding-top: 50px;
     padding-left: 7%;
     padding-right: 7%;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+  .slide__01 {
     background-image: url("../img/reviews_avatar-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: 68px 68px;
     background-position: 25% 40px;
   }
 
+  .slide__02 {
+    background-image: url("../img/Avatar_80x80.png");
+    background-repeat: no-repeat;
+    background-size: 68px 68px;
+    background-position: 25% 40px;
+  }
+
   .reviews__avatar {
-    //width: 68px;
-    //height: 68px;
     display: none;
   }
 
@@ -204,7 +212,7 @@
     display: block;
     margin-left: 55%;
     line-height: 120%;
-    margin-bottom: 24px;
+    margin-bottom: 27px;
   }
 
   .reviews__content-text {

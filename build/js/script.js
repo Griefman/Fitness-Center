@@ -97,6 +97,7 @@ function setStyle() {
 // ===================================================================
 // Вешаем на прикосновение функцию handleTouchStart
 var slider1 = document.querySelector('.trainers');
+var description = document.querySelector('.trainers__description');
 slider1.addEventListener('touchstart', handleTouchStart, false);
 slider1.addEventListener('touchmove', handleTouchMove, false);
 
@@ -119,13 +120,14 @@ function handleTouchMove(evt) {
   var xDiff = xDown - xUp;
   var yDiff = yDown - yUp;
 
-  if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+  if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
     if ( xDiff > 0) {
       showPreviewSlide();
     } else  {
       showNextSlide();
     }
   }
+  description.style.display = 'none';
   xDown = null;
   yDown = null;
 }
