@@ -60,6 +60,22 @@
   border-radius: 0;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: none;
+}
+
+::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+
 ::-webkit-input-placeholder {/*WebKitbrowsers*/
   color: $color-white;
 }

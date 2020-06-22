@@ -163,3 +163,9 @@ function handleTouchMove2(evt) {
   xDown = null;
   yDown = null;
 }
+
+
+function inputNumbers(){
+  if (event.keyCode != 43 && event.keyCode < 48 || event.keyCode > 57)
+    event.preventDefault();
+}

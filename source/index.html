@@ -599,7 +599,7 @@
 
           <div class="page-form__form-field">
             <label for="page-phone" class="visually-hidden"></label>
-            <input class="page-form__input" type="number" id="page-phone" name="phone-number" placeholder="Телефон" aria-label="Телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+            <input class="page-form__input" type="text" id="page-phone" name="phone-number" placeholder="Телефон" aria-label="Телефон" onKeyPress="inputNumbers()" required>
           </div>
         </div>
         <div class="page-form__btn-wrapper">
