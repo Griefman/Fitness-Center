@@ -6,6 +6,7 @@
   padding-bottom: 120px;
 }
 
+
 .reviews__title {
   margin: 0;
   margin-bottom: 55px;
@@ -17,13 +18,20 @@
   color: $color-text-black;
 }
 
-.reviews__slide {
+.wrapper {
+  display: flex;
   position: relative;
+  width: 41%;
+  min-height: 242px;
+  margin: 0 auto;
+}
+
+.reviews__slide {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 41%;
-  min-height: 242px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   padding-left: 4.5%;
   padding-right: 4.5%;
@@ -31,6 +39,21 @@
   background: #1c3374;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 }
+
+.slide__01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.slide__02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
 
 .reviews__avatar {
   width: 25%;
@@ -79,9 +102,6 @@
   color: $color-white;
 }
 
-.slide__02 {
-  display: none;
-}
 
 //---------- Slider ---------
 .prev,
@@ -94,6 +114,7 @@
   width: 18px;
   height: 34px;
   cursor: pointer;
+  z-index: 10000000;
 }
 
 .prev:hover,
@@ -108,7 +129,7 @@
 
 .prev {
   top: 50.3%;
-  left: 25.3%;
+  left: 0%;
   background-image: url("../img/icon_arrow-left_desktop.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -117,7 +138,7 @@
 
 .next {
   top: 50.3%;
-  right: 25.3%;
+  right: 0%;
   background-image: url("../img/icon_arrow-right_desktop.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -137,10 +158,15 @@
     line-height: 42px;
   }
 
-  .reviews__slide {
-    display: flex;
+  .wrapper {
     width: 74%;
     min-height: 240px;
+  }
+
+  .reviews__slide {
+    display: flex;
+    width: 100%;
+    height: auto;
     padding-left: 8.5%;
     padding-right: 8.5%;
     padding-top: 55px;
@@ -172,9 +198,13 @@
     line-height: 32px;
   }
 
-  .reviews__slide {
+  .wrapper {
     width: 70%;
-    min-height: 335px;
+    min-height: 240px;
+  }
+
+  .reviews__slide {
+    width: 100%;
     margin: 0 auto;
     padding-top: 50px;
     padding-left: 7%;
@@ -202,7 +232,6 @@
 
   .reviews__content {
     width: 100%;
-    height: auto;
     margin-left: 0;
     padding-top: 0;
   }
