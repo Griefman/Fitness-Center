@@ -192,6 +192,7 @@ var setWidth = function() {
 
   var maxHeight = Math.max.apply(null, heights);
   console.log(maxHeight);
+  if (maxHeight > slider3.clientHeight) {}
   sliderWidths.forEach(function (item) {
     item.style.height = maxHeight.toString() + 'px';
   })
@@ -199,3 +200,10 @@ var setWidth = function() {
 }
 
 setWidth();
+
+
+// ================Content=======================
+
+// var activeElement = document.querySelector('.vvv');
+//
+// activeElement.focus();

@@ -13,6 +13,12 @@ function minusSlide() {
   showSlides(slideIndex -= 1);
 }
 
+// ========================2===========================
+
+
+
+
+// =====================================================
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
@@ -28,11 +34,13 @@ function showSlides(n) {
     slideIndex = slides.length;
   }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
+    // slides[i].style.display = 'none';
+    slides[i].style.zIndex = '-10000';
   }
-  slides[slideIndex - 1].style.display = 'flex';
+  // slides[slideIndex - 1].style.display = 'flex';
+  slides[slideIndex - 1].style.zIndex = '10000';
 }
-
+// ===================================================================
 
 anchors.forEach(function (item) {
   item.addEventListener('click', function (e) {
@@ -46,7 +54,7 @@ anchors.forEach(function (item) {
 });
 
 
-// ==============================================
+// =====================Slider - 1=========================
 
 var slides = document.querySelectorAll('.trainers__item');
 var slidesNumber;
@@ -94,8 +102,8 @@ function setStyle() {
   });
 }
 
+
 // ===================================================================
-// Вешаем на прикосновение функцию handleTouchStart
 var slider1 = document.querySelector('.trainers');
 var description = document.querySelector('.trainers__description');
 slider1.addEventListener('touchstart', handleTouchStart, false);
@@ -132,7 +140,7 @@ function handleTouchMove(evt) {
   yDown = null;
 }
 
-
+// ===================== swipe =============================
 var slider2 = document.querySelector('.reviews');
 slider2.addEventListener('touchstart', handleTouchStart2, false);
 slider2.addEventListener('touchmove', handleTouchMove2, false);
@@ -163,3 +171,39 @@ function handleTouchMove2(evt) {
   xDown = null;
   yDown = null;
 }
+
+// ==============================================================
+function inputNumbers(){
+  if (event.keyCode != 43 && event.keyCode < 48 || event.keyCode > 57)
+    event.preventDefault();
+}
+
+// ======================SetWidth==========================
+
+var sliderWidths = document.querySelectorAll('.reviews__slide');
+var slider3 = document.querySelector('.wrapper');
+console.log(slider3.clientHeight);
+var setWidth = function() {
+  var heights = [];
+  sliderWidths.forEach(function (item) {
+    console.log(item.clientHeight);
+    heights.push(item.clientHeight);
+  })
+
+  var maxHeight = Math.max.apply(null, heights);
+  console.log(maxHeight);
+  if (maxHeight > slider3.clientHeight) {}
+  sliderWidths.forEach(function (item) {
+    item.style.height = maxHeight.toString() + 'px';
+  })
+  slider3.style.height = maxHeight.toString() + 'px';
+}
+
+setWidth();
+
+
+// ================Content=======================
+
+// var activeElement = document.querySelector('.vvv');
+//
+// activeElement.focus();

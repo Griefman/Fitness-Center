@@ -55,8 +55,24 @@
 }
 
 .subscription__time-item {
+  position: relative;
+  display: block;
   margin: 0;
   padding: 0;
+}
+
+.red-line {
+  position: absolute;
+  display: none;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+}
+
+.red-line__active {
+  display: block;
 }
 
 .subscription__time-link {
@@ -70,38 +86,70 @@
   line-height: 150%;
   color: $color-text-black;
   background-color: #f8f9fc;
+  border: none;
 }
 
 .subscription__time-link:hover {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.subscription__time-link::before {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: -2px;
-  background-color: #d10a42;
-  z-index: -100;
-}
-
 .subscription__time-link:focus {
   outline: none;
 }
 
-.subscription__time-link:focus::before {
-  z-index: 100;
-}
+//.subscription__time-link::before {
+//  position: absolute;
+//  display: block;
+//  content: "";
+//  width: 100%;
+//  height: 2px;
+//  left: 0;
+//  bottom: -2px;
+//  background-color: #d10a42;
+//  z-index: -100;
+//}
+
+//.subscription__time-link:focus {
+//  outline: none;
+//}
+//
+//.subscription__time-link:focus::before {
+//  z-index: 100;
+//}
+//
+//.subscription__time-item:nth-child(1) .subscription__time-link::before {
+//  z-index: 100;
+//}
+
+
+
+
+//
+//.subscription__time-link:checked::before {
+//  z-index: 100;
+//}
+//.iii {
+//  border: 4px solid red;
+//}
+//
+//.iii:focus ~ .subscription__time-link[for="1month"]::before,
+//.iii:focus ~ .subscription__time-link[for="6month"]::before,
+//.iii:focus ~ .subscription__time-link[for="12month"]::before,{
+//  z-index: 100;
+//}
+
+
 
 .subscription__wrapper {
   width: 100%;
   height: auto;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.subscription__wrapper:first-child {
+  display: flex;
 }
 
 .subscription__tariff {
