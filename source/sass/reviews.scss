@@ -21,7 +21,7 @@
 .wrapper {
   display: flex;
   position: relative;
-  width: 51%;
+  width: 41%;
   min-height: 242px;
   margin: 0 auto;
 }
@@ -33,8 +33,8 @@
   width: 100%;
   min-height: 242px;
   margin: 0 auto;
-  padding-left: 4.5%;
-  padding-right: 4.5%;
+  padding-left: 11%;
+  padding-right: 11%;
   padding-top: 60px;
   background: #1c3374;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
@@ -128,8 +128,8 @@
 }
 
 .prev {
-  top: 50.3%;
-  left: 0%;
+  top: 45%;
+  left: -10%;
   background-image: url("../img/icon_arrow-left_desktop.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -137,8 +137,8 @@
 }
 
 .next {
-  top: 50.3%;
-  right: 0%;
+  top: 45%;
+  right: -10%;
   background-image: url("../img/icon_arrow-right_desktop.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -148,7 +148,7 @@
 @media (max-width: $tablet-width) {
   .reviews {
     padding-top: 55px;
-    padding-bottom: 100px;
+    padding-bottom: 95px;
   }
 
   .reviews__title {
@@ -167,8 +167,8 @@
     display: flex;
     width: 100%;
     height: auto;
-    padding-left: 8.5%;
-    padding-right: 8.5%;
+    padding-left: 11%;
+    padding-right: 11%;
     padding-top: 55px;
     padding-bottom: 3%;
   }
@@ -179,11 +179,11 @@
   }
 
   .prev {
-    left: 5.3%;
+    left: -10%;
   }
 
   .next {
-    right: 5.3%;
+    right: -10%;
   }
 }
 
@@ -200,15 +200,16 @@
 
   .wrapper {
     width: 70%;
-    min-height: 240px;
+    min-height: 335px;
   }
 
   .reviews__slide {
     width: 100%;
+    min-height: 335px;
     margin: 0 auto;
     padding-top: 50px;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 11%;
+    padding-right: 11%;
     padding-bottom: 10px;
   }
 
@@ -234,6 +235,7 @@
     width: 100%;
     margin-left: 0;
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .reviews__content-name {
@@ -252,14 +254,14 @@
   .prev {
     width: 10px;
     height: 19px;
-    top: 51.3%;
-    left: 5.1%;
+    top: 46%;
+    left: -14%;
   }
 
   .next {
     width: 10px;
     height: 19px;
-    top: 51.3%;
-    right: 5.1%;
+    top: 46%;
+    right: -14%;
   }
 }
