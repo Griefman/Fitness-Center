@@ -4,7 +4,7 @@
   padding-top: 25px;
   padding-bottom: 30px;
   padding-left: 7.5%;
-  padding-right: 7.5%;
+  padding-right: 6.5%;
   background-color: #030a1a;
 }
 
@@ -69,9 +69,9 @@
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  //justify-content: space-between;
   align-items: center;
-  width: 110px;
+  width: 130px;
   height: auto;
   margin-left: auto;
   padding: 0;
@@ -79,14 +79,11 @@
 }
 
 .footer-social__item {
-  display: block;
+  display: flex;
+  width: 33%;
   margin-bottom: 10px;
-  margin-right: 20px;
-}
-
-.footer-social__item:nth-child(3n),
-.footer-social__item:last-child {
   margin-right: 0;
+  justify-content: space-around;
 }
 
 
@@ -103,7 +100,7 @@
     padding-top: 15px;
     padding-bottom: 30px;
     padding-left: 5.5%;
-    padding-right: 5.5%;
+    padding-right: 4.5%;
     background-color: #030a1a;
   }
 
@@ -127,7 +124,7 @@
   }
 
   .footer-social {
-    width: 100px;
+    width: 120px;
     justify-content: space-between;
     margin-left: auto;
   }
@@ -198,9 +195,23 @@
   }
 
   .footer-social {
-    width: 140px;
+    width: 160px;
     margin-top: 0;
     margin-left: 0;
     margin-right: auto;
+  }
+
+  .vkontakte {
+    width: 32px;
+    height: 17px;
+  }
+
+  .footer-social__item:nth-child(3n+1)  svg {
+    width: 32px;
+    height: 17px;
+  }
+
+  .footer-social__item:nth-child(3n+1) {
+    justify-content: space-between;
   }
 }
