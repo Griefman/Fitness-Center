@@ -97,49 +97,6 @@
   outline: none;
 }
 
-//.subscription__time-link::before {
-//  position: absolute;
-//  display: block;
-//  content: "";
-//  width: 100%;
-//  height: 2px;
-//  left: 0;
-//  bottom: -2px;
-//  background-color: #d10a42;
-//  z-index: -100;
-//}
-
-//.subscription__time-link:focus {
-//  outline: none;
-//}
-//
-//.subscription__time-link:focus::before {
-//  z-index: 100;
-//}
-//
-//.subscription__time-item:nth-child(1) .subscription__time-link::before {
-//  z-index: 100;
-//}
-
-
-
-
-//
-//.subscription__time-link:checked::before {
-//  z-index: 100;
-//}
-//.iii {
-//  border: 4px solid red;
-//}
-//
-//.iii:focus ~ .subscription__time-link[for="1month"]::before,
-//.iii:focus ~ .subscription__time-link[for="6month"]::before,
-//.iii:focus ~ .subscription__time-link[for="12month"]::before,{
-//  z-index: 100;
-//}
-
-
-
 .subscription__wrapper {
   width: 100%;
   height: auto;
