@@ -1,6 +1,6 @@
 'use strict';
 
-'use strict';
+
 var times = document.querySelectorAll('.subscription__time-item');
 var subscriptions = document.querySelectorAll('.subscription__wrapper');
 var changeTime = function () {
